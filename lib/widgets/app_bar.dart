@@ -17,11 +17,10 @@ class AppBarInicial extends StatelessWidget {
         ),
         Expanded(child: Container()),
         const Icon(Icons.notifications_outlined),
-        const SizedBox(width: 12),
+        const SizedBox(width: 16),
         const Icon(Icons.schedule),
-        const SizedBox(width: 12),
+        const SizedBox(width: 16),
         const Icon(Icons.settings_outlined),
-        const SizedBox(width: 12),
       ],
     );
   }
