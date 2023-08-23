@@ -14,6 +14,7 @@ class PlaylistButton extends StatelessWidget {
         borderRadius: BorderRadius.circular(4),
         color: AppColors.temaPrincipal.cardColor,
       ),
+      margin: const EdgeInsets.all(4),
       child: Row(
         children: [
           Stack(
