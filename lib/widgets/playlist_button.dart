@@ -17,20 +17,16 @@ class PlaylistButton extends StatelessWidget {
       margin: const EdgeInsets.all(4),
       child: Row(
         children: [
-          Stack(
-            children: [
-              Container(color: Colors.white),
-              ClipRRect(
-                borderRadius:
-                    const BorderRadius.horizontal(left: Radius.circular(4)),
-                child: Image(
-                  image: const AssetImage(
-                      'assets/images/playlist_standard_icon.png'),
-                  height: playlistButtonHeight,
-                  width: playlistButtonHeight,
-                ),
-              ),
-            ],
+          Container(color: Colors.white),
+          ClipRRect(
+            borderRadius:
+                const BorderRadius.horizontal(left: Radius.circular(4)),
+            child: Image(
+              image:
+                  const AssetImage('assets/images/playlist_standard_icon.png'),
+              height: playlistButtonHeight,
+              width: playlistButtonHeight,
+            ),
           ),
           const SizedBox(width: 8),
           const Text(
