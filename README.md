@@ -1,16 +1,14 @@
 # offline_spotify
 
-A new Flutter project.
+Um reprodutor de músicas locais com a cara do spotify.
 
-## Getting Started
+## Autores
 
-This project is a starting point for a Flutter application.
+- [@RodrigoUchoa001](https://www.github.com/RodrigoUchoa001)
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Screenshots
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Em breve.
+<!-- ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here) -->
+
