@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:offline_spotify/widgets/app_bar.dart';
+import 'package:offline_spotify/widgets/initial_all_playlists.dart';
 import 'package:offline_spotify/widgets/recommended_playlists.dart';
 
 class TelaInicial extends StatelessWidget {
@@ -16,6 +17,8 @@ class TelaInicial extends StatelessWidget {
             AppBarInicial(),
             SizedBox(height: 16),
             RecommendedPlaylists(),
+            SizedBox(height: 24),
+            Expanded(child: InitialAllPlaylists()),
           ],
         ),
       ),
