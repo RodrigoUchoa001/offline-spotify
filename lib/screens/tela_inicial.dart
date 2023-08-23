@@ -13,7 +13,7 @@ class TelaInicial extends StatelessWidget {
         padding: EdgeInsets.all(8.0),
         child: Column(
           children: [
-            SizedBox(height: 48),
+            SizedBox(height: 64),
             AppBarInicial(),
             SizedBox(height: 16),
             RecommendedPlaylists(),
