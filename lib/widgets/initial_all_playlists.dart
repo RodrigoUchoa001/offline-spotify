@@ -35,12 +35,13 @@ class InitialAllPlaylists extends StatelessWidget {
                       height: playlistButtonHeight,
                       width: playlistButtonHeight,
                     ),
+                    const SizedBox(height: 8),
                     Text(
                       'Playlist ${index + 1}',
                       style: const TextStyle(
                         fontFamily: 'GothamMedium',
                         color: Colors.white,
-                        fontSize: 12,
+                        fontSize: 16,
                       ),
                     ),
                   ],
