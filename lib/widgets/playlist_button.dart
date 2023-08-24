@@ -29,14 +29,17 @@ class PlaylistButton extends StatelessWidget {
           ),
           const SizedBox(width: 8),
           const Expanded(
-            child: Text(
-              'Nome da playlist playlist playlist playlist',
-              softWrap: false,
-              maxLines: 2,
-              overflow: TextOverflow.ellipsis,
-              style: TextStyle(
-                fontFamily: 'GothamMedium',
-                color: Colors.white,
+            child: Padding(
+              padding: EdgeInsets.all(8.0),
+              child: Text(
+                'Nome da playlist playlist playlist playlist',
+                softWrap: false,
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
+                style: TextStyle(
+                  fontFamily: 'GothamMedium',
+                  color: Colors.white,
+                ),
               ),
             ),
           )
