@@ -17,7 +17,6 @@ class PlaylistButton extends StatelessWidget {
       margin: const EdgeInsets.all(4),
       child: Row(
         children: [
-          Container(color: Colors.white),
           ClipRRect(
             borderRadius:
                 const BorderRadius.horizontal(left: Radius.circular(4)),
@@ -29,11 +28,16 @@ class PlaylistButton extends StatelessWidget {
             ),
           ),
           const SizedBox(width: 8),
-          const Text(
-            'Nome da Playlist',
-            style: TextStyle(
-              fontFamily: 'GothamMedium',
-              color: Colors.white,
+          const Expanded(
+            child: Text(
+              'Nome da playlist playlist playlist playlist',
+              softWrap: false,
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+              style: TextStyle(
+                fontFamily: 'GothamMedium',
+                color: Colors.white,
+              ),
             ),
           )
         ],
