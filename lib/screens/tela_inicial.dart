@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:offline_spotify/widgets/app_bar.dart';
+import 'package:offline_spotify/widgets/bottom_nav_bar.dart';
 import 'package:offline_spotify/widgets/initial_all_playlists.dart';
 import 'package:offline_spotify/widgets/recommended_playlists.dart';
 
@@ -22,6 +23,7 @@ class TelaInicial extends StatelessWidget {
           ],
         ),
       ),
+      bottomNavigationBar: BottomNavBar(),
     );
   }
 }
