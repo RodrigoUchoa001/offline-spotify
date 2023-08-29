@@ -6,27 +6,30 @@ class RecommendedPlaylists extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      children: [
-        Row(
-          children: [
-            Expanded(child: PlaylistButton()),
-            Expanded(child: PlaylistButton()),
-          ],
-        ),
-        Row(
-          children: [
-            Expanded(child: PlaylistButton()),
-            Expanded(child: PlaylistButton()),
-          ],
-        ),
-        Row(
-          children: [
-            Expanded(child: PlaylistButton()),
-            Expanded(child: PlaylistButton()),
-          ],
-        ),
-      ],
+    return const Padding(
+      padding: EdgeInsets.symmetric(horizontal: 8.0),
+      child: Column(
+        children: [
+          Row(
+            children: [
+              Expanded(child: PlaylistButton()),
+              Expanded(child: PlaylistButton()),
+            ],
+          ),
+          Row(
+            children: [
+              Expanded(child: PlaylistButton()),
+              Expanded(child: PlaylistButton()),
+            ],
+          ),
+          Row(
+            children: [
+              Expanded(child: PlaylistButton()),
+              Expanded(child: PlaylistButton()),
+            ],
+          ),
+        ],
+      ),
     );
   }
 }

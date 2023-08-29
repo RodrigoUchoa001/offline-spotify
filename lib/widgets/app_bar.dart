@@ -5,23 +5,26 @@ class AppBarInicial extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        const Text(
-          'Boa noite',
-          style: TextStyle(
-            fontFamily: 'GothamMedium',
-            color: Colors.white,
-            fontSize: 24,
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 8.0),
+      child: Row(
+        children: [
+          const Text(
+            'Boa noite',
+            style: TextStyle(
+              fontFamily: 'GothamMedium',
+              color: Colors.white,
+              fontSize: 24,
+            ),
           ),
-        ),
-        Expanded(child: Container()),
-        const Icon(Icons.notifications_outlined),
-        const SizedBox(width: 16),
-        const Icon(Icons.schedule),
-        const SizedBox(width: 16),
-        const Icon(Icons.settings_outlined),
-      ],
+          Expanded(child: Container()),
+          const Icon(Icons.notifications_outlined),
+          const SizedBox(width: 16),
+          const Icon(Icons.schedule),
+          const SizedBox(width: 16),
+          const Icon(Icons.settings_outlined),
+        ],
+      ),
     );
   }
 }

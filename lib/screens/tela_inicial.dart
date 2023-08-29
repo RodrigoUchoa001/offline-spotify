@@ -10,18 +10,15 @@ class TelaInicial extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Padding(
-        padding: EdgeInsets.all(8.0),
-        child: Column(
-          children: [
-            SizedBox(height: 64),
-            AppBarInicial(),
-            SizedBox(height: 16),
-            RecommendedPlaylists(),
-            SizedBox(height: 24),
-            Expanded(child: InitialAllPlaylists()),
-          ],
-        ),
+      body: Column(
+        children: [
+          SizedBox(height: 64),
+          AppBarInicial(),
+          SizedBox(height: 16),
+          RecommendedPlaylists(),
+          SizedBox(height: 24),
+          Expanded(child: InitialAllPlaylists()),
+        ],
       ),
       bottomNavigationBar: BottomNavBar(),
     );
