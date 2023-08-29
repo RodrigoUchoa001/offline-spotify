@@ -1,23 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_displaymode/flutter_displaymode.dart';
 import 'package:offline_spotify/widgets/app_bar.dart';
 import 'package:offline_spotify/widgets/bottom_nav_bar.dart';
 import 'package:offline_spotify/widgets/initial_all_playlists.dart';
 import 'package:offline_spotify/widgets/recommended_playlists.dart';
 
-class TelaInicial extends StatefulWidget {
+class TelaInicial extends StatelessWidget {
   const TelaInicial({super.key});
-
-  @override
-  State<TelaInicial> createState() => _TelaInicialState();
-}
-
-class _TelaInicialState extends State<TelaInicial> {
-  @override
-  void initState() {
-    super.initState();
-    FlutterDisplayMode.setHighRefreshRate();
-  }
 
   @override
   Widget build(BuildContext context) {

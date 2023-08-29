@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_displaymode/flutter_displaymode.dart';
 
 import 'package:offline_spotify/constants/app_colors.dart';
 import 'package:offline_spotify/screens/tela_inicial.dart';
 
-void main() {
+void main() async {
   runApp(const MyApp());
+  await FlutterDisplayMode.setHighRefreshRate();
 }
 
 class MyApp extends StatelessWidget {
