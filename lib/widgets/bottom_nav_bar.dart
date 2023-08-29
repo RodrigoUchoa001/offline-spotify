@@ -29,7 +29,7 @@ class BottomNavBar extends StatelessWidget {
           Colors.transparent,
           Colors.black,
         ],
-        // stops: [0, 1],
+        stops: [0, 1],
         begin: Alignment.topCenter,
         end: Alignment.bottomCenter,
       )),
