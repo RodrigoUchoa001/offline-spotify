@@ -22,23 +22,35 @@ class BottomNavBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        const BottomMusicPlayerBar(),
-        Container(
-          margin: const EdgeInsets.symmetric(vertical: 8.0),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              getBottomNavBarIcon(Icons.home_filled, 'Início'),
-              getBottomNavBarIcon(Icons.search, 'Buscar'),
-              getBottomNavBarIcon(
-                  Icons.library_music_outlined, 'Sua biblioteca'),
-            ],
+    return Container(
+      decoration: const BoxDecoration(
+          gradient: LinearGradient(
+        colors: [
+          Colors.transparent,
+          Colors.black,
+        ],
+        // stops: [0, 1],
+        begin: Alignment.topCenter,
+        end: Alignment.bottomCenter,
+      )),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          const BottomMusicPlayerBar(),
+          Container(
+            margin: const EdgeInsets.symmetric(vertical: 8.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                getBottomNavBarIcon(Icons.home_filled, 'Início'),
+                getBottomNavBarIcon(Icons.search, 'Buscar'),
+                getBottomNavBarIcon(
+                    Icons.library_music_outlined, 'Sua biblioteca'),
+              ],
+            ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
