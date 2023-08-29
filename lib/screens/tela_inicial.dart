@@ -17,7 +17,7 @@ class TelaInicial extends StatelessWidget {
           SizedBox(height: 16),
           RecommendedPlaylists(),
           SizedBox(height: 24),
-          Expanded(child: InitialAllPlaylists()),
+          InitialAllPlaylists(),
         ],
       ),
       bottomNavigationBar: BottomNavBar(),

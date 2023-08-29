@@ -7,6 +7,8 @@ class InitialAllPlaylists extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double altura = MediaQuery.of(context).size.height;
+
     return Padding(
       padding: const EdgeInsets.only(left: 8.0),
       child: Column(
@@ -21,7 +23,8 @@ class InitialAllPlaylists extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 8),
-          Expanded(
+          SizedBox(
+            height: altura * 0.25,
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemCount: 10,
