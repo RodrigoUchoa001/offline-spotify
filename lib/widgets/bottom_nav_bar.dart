@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:offline_spotify/screens/player_screen.dart';
 import 'package:offline_spotify/widgets/bottom_music_player_bar.dart';
+import 'package:page_transition/page_transition.dart';
 
 class BottomNavBar extends StatelessWidget {
   const BottomNavBar({super.key});
@@ -36,7 +38,19 @@ class BottomNavBar extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          const BottomMusicPlayerBar(),
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                PageTransition(
+                  curve: Curves.linear,
+                  type: PageTransitionType.bottomToTop,
+                  child: const PlayerScreen(),
+                ),
+              );
+            },
+            child: const BottomMusicPlayerBar(),
+          ),
           Container(
             margin: const EdgeInsets.symmetric(vertical: 8.0),
             child: Row(
