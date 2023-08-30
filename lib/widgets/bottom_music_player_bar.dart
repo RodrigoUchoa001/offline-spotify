@@ -15,10 +15,13 @@ class BottomMusicPlayerBar extends StatelessWidget {
       child: const Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Image(
-            image: AssetImage('assets/images/playlist_standard_icon.png'),
-            height: 48,
-            width: 48,
+          ClipRRect(
+            borderRadius: BorderRadius.all(Radius.circular(4)),
+            child: Image(
+              image: AssetImage('assets/images/playlist_standard_icon.png'),
+              height: 48,
+              width: 48,
+            ),
           ),
           Expanded(
             child: Padding(
